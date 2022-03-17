@@ -17,3 +17,8 @@
 (replace-regexp "\\<program\\('s\\|s\\)?\\>" "module\\1")
 
 
+;; returns a string containing the portion of the buffer that matches the nth parenthesized subexpression
+(buffer-substring (match-beginning n (match-end n)))
+
+
+
